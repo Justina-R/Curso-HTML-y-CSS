@@ -1,0 +1,44 @@
+/*MEDIDAS EN CSS
+-Pixel (px): valor que se modifica según el tamaño de la pantalla.
+-Medidas físicas (convienen cuando el producto se va a llevar a la "vida real" o maquetar aplicaciones táctiles):
+    -Puntos (pt) y picas (pc): si creamos un diseño para imprimir
+    -Milímetros (mm), centímetros (cm), pulgadas (in): Si lo imprimimos, queda del mismo tamaño. NO queda de X cm en la página web.
+    -NO es bueno para el Responsive Design
+-Medidas relativas (útiles para Responsive Design):
+    -Porcentaje: es relativo al tamaño que lo contiene
+    -Em: va a valer lo mismo que el font size del elemento padre. Si en el padre el font size es de 20px, en el hijo 2em es igual a 40px. USADO EN TIPOGRAFÍA
+    -Rem: igual que "em", pero busca al elemento raíz, html:
+    html {}. Por default, es de 16px. USADO EN TIPOGRAFÍA
+    - Si no está definido el font-size, em va a escalar para buscar otro padre que tenga font-size. Si no lo encuentra, va al default (16px).
+-Viewport Height(vh) o Viewport Widht (vw): El alto/ancho disponible en la pantalla.
+-Vmax: busca el vh y el vw y elige el más grande.
+-Vmin: busca el vh y el vw y elige el más chico.
+    */
+body {
+    margin: 0;
+}
+
+    div {
+    background: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid #999;
+    width: 100vw; /*Ancho total del viewport*/
+    height: 100vh; /*Alto total del viewport*/
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+span {
+    color: #999;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+p {
+    color: #555;
+}

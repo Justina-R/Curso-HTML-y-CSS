@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(226, 164, 48, 0.856);
+    margin: 0;
+    font-family: sans-serif;
+    color: #c73408;
+}
+
+.box {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    background: #f3e9;
+    /* Propiedades del fondo
+    -background-color.*/
+    background-color: #6fa;
+    /*-background-image: url("url de la imagen") : el fondo se convierte en imagen*/
+    background-image: url("https://images.reporteindigo.com/wp-content/uploads/2023/08/familia-encuentra-a-su-perrito-gracias-a-un-video-en-tiktok-llevaba-ocho-meses-desaparecido.jpg");  
+    /*-background-size:
+        -100%: el tamaño del fondo sea el 100% del width del elemento.
+        -contain: obliga al contenedor a que entre la imagen al menos una vez.
+        -cover: acomoda la imagen a la resolución del contenedor.*/
+    background-size: cover;
+    /*-background-position: left, center, right, top, bottom.
+    -background-repeat: 
+        no-repeat: No repite la imagen.
+        repeat-x: repite solo en el eje x.
+        repeat-y: repite solo en el eje y.*/
+    background-position: top;
+    /* La imagen queda fija en el fondo y el texto se mueve */
+    background-attachment: fixed;
+}
+/* Ejemplo para darle un color a la imagen de fondo. */
+.color {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+Si vamos a ingresar todas las características del background es conveniente usar el comando "background" e ingresar todos los valores ahí.
+Ejemplo: background: url(url de la imagen) top (la posición) / cover (size) no-repeat fixed (attachment) color
+No hace falta poner TODOS los valores
+LA BARRITA ENTRE POSITION Y SIZE ES MUY IMPORTANTE*/

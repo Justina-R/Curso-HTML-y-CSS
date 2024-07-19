@@ -1,0 +1,12 @@
+div {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+form {
+    width: 400px;
+}
+input {
+    /* Si usamos porcentaje, es relativo a la caja que contiene a este elemento. En este caso va a ser el 90% de los 400px del elemento "form". */
+    width: 90%;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: red;
+    margin: 0;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    /* Gradientes lineales: pide dos (o más) parámetros que son los colores entre los que queremos hacer el gradiente. */
+    /* Adelante de los colores, se le puede agregar la dirección en la que va el gradiente: to right, to left, to bottom, to top */
+    /* También podemos agregar detrás de los colores el porcentaje que queremos que ocupe ese color. Ejemplo: transparent 80% */
+    /* EJEMPLO: background:linear-gradient(to left, transparent, #000a); */
+
+    /* ----------------------------------------------------- */
+    /* Gradiente radial: queda el centro con el primer color y los bordes con el segundo.*/
+    background: radial-gradient(transparent, #000a);
+
+    /* ----------------------------------------------------- */
+    /* Gradiente cónico:  arranca con el primer color a las 12h y va haciendo el gradiente en el sentido de las agujas del reloj.
+    EJEMPLO: conic-gradient: (transparent, #000a);*/
+
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}

@@ -1,0 +1,13 @@
+/* DEFINIR TIPOGRAFÍAS */
+@font-face {
+    font-family: "Signika Negative";
+    src: url("fonts/SignikaNegative-Regular.ttf") format("truetype");
+    /* Es la tipografía en 400 */
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Signika Negative";
+    src: url("fonts/SignikaNegative-SemiBold.ttf") format("truetype");
+    /* Es la tipografía en 600 */
+    font-weight: 600;
+}

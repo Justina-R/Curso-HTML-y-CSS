@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 280px;
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 30px;
+    /*
+    box-shadow:
+        1. Cuanto se corre la sombra horizontalmente hacia la derecha. Si queremos que vaya a la izquierda, hay que poner un valor negativo.
+        2. Cuanto se corre verticalmente hacia abajo. Si queremos que vaya hacia arriba, hay q ponerle un valor negativo.
+        3. Difuminado de la sombra (desenfoque) MÁS IMPORTANTE.
+        4. Cuanto queremos que la sombra se expanda
+        5. Color
+    */
+    box-shadow: 0 0 40px 0 #0007;
+    padding: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #444;
+    /* Para que se pueda centrar la imagen */
+    text-align: center;
+}
+
+h2{
+    font-size: 18px;
+    margin-top: 5px;
+    color: #999;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-shadow: 0px 0px 5px #f92;
+}
+
+p {
+    list-style: none;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 13px;
+    /* text-shadow pide las mismas características que box-shadow excepto la expansión de la sombra. */
+    text-shadow: 0 0 5px #f82;
+}
+img {
+    width: 160px;
+    
+    /* Para que se pueda centrar la imagen en el div */
+    /* margin: auto; */
+    /* ------------------------------------------------ */
+    /* Sombras para elementos con fondo transparente */
+    filter: drop-shadow(0px 0px 5px #f92)
+}

@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+.box-default {
+    /* Box sin box-sizing */
+    padding: 25px;
+    border: 10px solid black;
+}
+.box-new {
+    /* Por default, el tamaño de width y height, es el tamaño del CONTENIDO. Es decir, que el padding y el border van por fuera del tamaño establecido. box-sizing: content-box*/
+
+    /* BOX-SIZING:
+    Con box-sizing se define lo que va a incluir la box en su tamaño. En el caso de border-box, el padding y el border va a ser parte del total */
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid black;
+}

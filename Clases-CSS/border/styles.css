@@ -1,0 +1,52 @@
+div {
+    background: red;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+
+    /* ---------------------------------------------------- */
+    /* CARACTERÍSTICAS DEL BORDE DE UN ELEMENTO */
+    border-width: 4px;
+    /* Podemos ponerlo en "transparent" si no queremos que se vea */
+    border-color: orange;
+    /* Se suele dejar en "solid" */
+    border-style: solid;
+    /* Redondear los bordes. Con porcentaje, el estilo de redondeo es distinto que con pixeles:
+      - Con pixeles, se redondean SOLO los bordes.
+      - Con porcentaje, se redondea todo el bloque.*/
+    border-radius: 4px;
+    /* ---------------------------------------------------- */
+
+    /* BORDER RADIUS ESPECÍFICO:
+    Empieza arriba a la izquierda y sigue en sentido horario */
+    border-radius: 10px 50px 0 4px;
+    /* 10px: borde arriba izq y abajo der 5px: borde arriba der y abajo izq */
+    border-radius: 10px 5px;
+    /* ---------------------------------------------------- */
+
+    /* PROPIEDAD QUE REEMPLAZA LO ANTERIOR (EXCEPTO RADIUS) */
+    /* width - estilo - color */
+    border: 3px solid black;
+    /* ---------------------------------------------------- */
+
+    /* MODIFICAR BORDES ESPECÍFICOS */
+    /* Podemos hacer border-top, bottom, left o right */
+    border-top: 3px solid blue;
+    /* También podemos elegir una esquina en específico */
+    border-bottom-left-radius: 10px;
+    /* ---------------------------------------------------- */
+
+    /* SIN BORDES */
+    border: none;
+}
+input {
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid greenyellow;
+    color: greenyellow;
+}
+body {
+    background-color: black;
+}

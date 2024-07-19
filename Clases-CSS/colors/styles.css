@@ -1,0 +1,31 @@
+.box {
+    width: 100px;
+    height: 100px;
+
+    /* RGBA
+    Red Green Blue (van del 0 al 255) Transparencia (del 0 al 1 o con porcentajes)
+    0 = transparente; 1 = opaco*/
+
+    /* Ejemplo: background: rgba(255, 100, 10, 0.4); */
+    /* ---------------------------------------------------- */
+
+    /* Hexadecimal 
+    Va del 0 al f(16)
+    Cada color (RGB) requiere dos valores del 0 al f
+
+    Ejemplo: background: #00ff00; - Verde absoluto
+
+    Versión abreviada: #aabbcc = #abc. Es menos específico porque con el segundo valor especificamos el subvalor entre a y b (por ejemplo). 
+    
+    Cuarto valor: opacidad, del 0 al f. Ejemplo: 0bca*/
+    /* ---------------------------------------------------- */
+
+    /* HSL(A)
+    hue: rueda que selecciona la matiz. Buscar la rueda de colores
+    saturation: se escribe en porcentajes
+    lightness: luminancia, también se escribe en porcentaje*/
+
+    /* Ejemplo background: hsl(120, 100%, 40%); */
+
+    margin: 20px;
+}

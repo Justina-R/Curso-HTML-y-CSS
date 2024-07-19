@@ -1,0 +1,12 @@
+.box1 {
+    background: red;
+    height: 150px;
+    /* Margin: permite separar los elementos */
+    margin: 10px;
+    /* Margin collapse: los márgenes se superponen. El tamaño más grande es el que queda */
+}
+.box2 {
+    background-color:blue;
+    height: 150px;
+    margin: 80px;
+}

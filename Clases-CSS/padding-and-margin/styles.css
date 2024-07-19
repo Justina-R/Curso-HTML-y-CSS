@@ -1,0 +1,29 @@
+.formulario {
+    background-color: rgb(63, 72, 121);
+    /* padding: 10px; */
+    /* --------------------------------------------------- */
+    /* padding-bottom, padding-left y padding-right funcionan igual. */
+    /* padding-top: 20px; */
+    /* --------------------------------------------------- */
+    /* Cuando escribimos 0, nunca ponemos la medida. */
+    /* El padding se va poniendo según las agujas del rejoj: top, right, bottom, left */
+    padding: 10px 0 40px 20px;
+    /* Si ponemos dos valores, define horizontal y vertical */
+    /* --------------------------------------------------- */
+}
+.formulario_input {
+    /* Aumenta el tamaño que ocupa el elemento en la etiqueta */
+    padding: 9px 10px;
+    width: 90%;
+    background-color: aliceblue;
+    color: azure;
+    margin: 10px;
+}
+
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgb(216, 42, 42);
+    color: white;
+    width: 50%;
+}

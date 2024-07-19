@@ -1,0 +1,46 @@
+/* Propiedades del texto */
+p {
+    /* La última propiedad que defina no necesita punto y coma */
+    color: violet;
+    /* ----------------------------------------------------------------------------------------------------------- */
+
+    /* Tipografía. Si la tipografía tiene más de una palabra, hay que usar comillas. Ej.: ´comic sans´*/
+    font-family: Justina;
+    /* ------------------------------------------------------------------------------------------------------------ */
+
+    /* Se pueden agregar dos o más tipografías separadas por coma para que si la primera no funciona, aparezca la segunda */
+    /* Tamaño por defecto = 16px */
+    font-size: 12px;
+    /* ------------------------------------------------------------------------------------------------------------- */
+
+    /* Grosor de la tipografía. RECOMENDADO en lugar de la tag "b". Puede ir de 100 a 900*/
+    /* El grosor cambia según cómo se configuró cada tipografía */
+    /* bold = 700; bolder = va un escalón más arriba del valor por defecto de la tipografía */
+    /* Como no existe la tipografía Justina en 500, busca el tamaño más cercano. En este caso, 400. */
+    font-weight: 500;
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+    /* normal, italic, oblique (no inclina tanto como italic) */
+    /* El valor por defecto es "normal" */
+    font-style: oblique;
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+    /* Alinea el texto: left, center, right, justify, start (se alinea desde donde comenzás a escribir. En habla hispana, será izquierda) */
+    text-align: center;
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+    /* underline = subrayado; overline = línea arriba; line-through = tachado. Puedo usar las tres separándolas con espacio */
+    text-decoration: underline;
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+    /* Interlineado. Acepta números o porcentajes */
+    line-height: 1.5;
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+    /* Espaciado entre letras por pixeles */
+    letter-spacing: 2px;
+    /* -------------------------------------------------------------------------------------------------------------- */
+
+    /* Todo el texto se transforma: uppercase, lowercase, capitalize (capitaliza todas las palabras), full width (sirve para árabe) */
+    text-transform: capitalize;
+}

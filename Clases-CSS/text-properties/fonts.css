@@ -1,0 +1,19 @@
+/* DEFINIR TIPOGRAFÍAS */
+@font-face {
+    font-family: "Justina";
+    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+    /* Es la tipografía Justina en 400 */
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Justina";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    /* Es la tipografía Justina en 900 */
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Justina";
+    src: url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    /* Es la tipografía Justina en 700 */
+    font-weight: 700;
+}

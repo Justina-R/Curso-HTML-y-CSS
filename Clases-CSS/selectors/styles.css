@@ -1,0 +1,12 @@
+/* li = selector por elemento. El elemento que debemos modificar. */
+li {
+    color: green;
+}
+/* Selector por clase = Cuando es una clase, le ponemos el puntito adelante */
+.ingrediente-faltante {
+    color: red
+}
+/* Selector por ID = Cuando es un id, se usa # */
+#ingrediente-secreto{
+    color: gold;
+}
