@@ -1,0 +1,96 @@
+/* Selecciona al elemento raíz */
+/* :root {
+    
+} */
+
+h1 {
+  color: #48f;
+  font-family: sans-serif;
+  margin: 30px;
+}
+
+/* Pseudoclase que indica que cuando pase el mouse por encima del elemento, este va a tener este estilo */
+h1:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+/* Define el estilo de un elemento cuando le damos click (derecho o izquierdo) */
+h1:active {
+  background-color: #999;
+  color: #fff;
+}
+
+/* Selecciona el primer li del mismo padre*/
+li:first-child {
+  color: #f00;
+}
+
+/* Selecciona al segundo li */
+li:nth-child(2) {
+  color: #0f0;
+}
+
+/* Selecciona un intervalo de aplicación de estilo */
+li:nth-child(3n) {
+  /* == dos elementos no, uno sí */
+  color: aquamarine;
+}
+
+/* Selecciona el último li del mismo padre*/
+li:last-child {
+  color: #00f;
+}
+
+/* Similar al nth-child pero no cuenta los elementos que no son li */
+/* Si hay otro tipo de elemento en la lista, no va a contar como una posición. En el nth-child sí */
+li:nth-of-type(3) {
+  background-color: #f00;
+}
+
+/* Excluimos una clase */
+.lista li:not(.elem-4) {
+  background-color: #00f;
+}
+
+/* Se aplica el estilo si la etiqueta esta completamente VACÍA */
+div:empty {
+  background-color: #48f;
+  padding: 30px;
+}
+
+/* Selecciona solo a los input de tipo checkbox */
+input[type="checkbox"] {
+  margin: 50px;
+}
+
+/* Estilo que se aplica si el checbox está chequeado */
+input[type="checkbox"]:checked {
+  margin: 0px;
+}
+
+/* Seleccionando enlaces visitados */
+a:visited {
+  color: green;
+}
+
+/* Seleccionando enlaces no visitados */
+a:link {
+  color: red;
+}
+
+/* Estilo que se aplica SI el ul tiene un li adentro */
+ul:has(li) {
+  background-color: #ccc;
+}
+
+
+/* Estilo que se aplica SI luego del ul hay un div. SE APLICA AL UL */
+ul:has(+div){
+    background-color: aliceblue;
+}
+
+/* Asi se modifica el div que viene después del ul */
+ul + div {
+    background-color: aquamarine;
+}

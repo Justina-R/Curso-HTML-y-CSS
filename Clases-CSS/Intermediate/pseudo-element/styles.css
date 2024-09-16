@@ -1,0 +1,27 @@
+div {
+    padding: 20px;
+}
+
+/* Selecciona la primera letra de un elemento */
+h1::first-letter {
+    color: red;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+
+/* Modifica solo la primera línea */
+div::first-line {
+    color: blue;
+}
+
+/* Cuando seleccionamos algo con el mouse */
+div::selection {
+    background-color: red;
+    color: #fff;
+}
+
+/* Modifica el placeholder */
+input::placeholder {
+    color: green;
+    background-color: #000;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srcset & Sizes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- srcset: indicamos la imagen y HASTA en que resolución de pantalla se va a usar. Se pone "w" en lugar de "px" -->
+    <img src="img-small.png" srcset="img-small.png 400w, img-medium.png 700w, img-original 1000w">
+    <!-- sizes: indica cuales son los máximos de altura que puede utilizar -->
+     <!-- Para una pantalla de hasta 700px, usá una imagen de 600px y si tiene más, usá una imagen de 900px-->
+     <img src="img" sizes="(max-width: 700px) 600px, 900px">
+
+</body>
+</html>

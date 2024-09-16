@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    /* Propiedad que nos permite hacer queries con este contenedor.
+        - inline-size: tiene en cuenta las dimensiones en línea
+        - size: tiene en cuenta las dimensiones en línea y en bloque
+        -normal: no es un querie container*/
+    container-type: inline-size;
+    /* Nombre del contenedor */
+    container-name: main;
+}
+
+p {
+    font-size: 8px;
+}
+
+/* Se aplica a todos los contenedores cuando tienen hasta 500px de ancho. */
+@container (max-width: 500px) {
+    p {
+        font-size: 20px;
+    }
+}
+/* Si queremos modificar un solo contenedor, hay que agregar el nombre */
+@container main (max-width: 500px) {
+    p {
+        font-size: 20px;
+        background-color: red;
+    }
+}

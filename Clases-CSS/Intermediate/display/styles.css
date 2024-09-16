@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+div {
+    padding: 20px;
+    background-color: #999;
+}
+
+a {
+    background-color: red;
+    color: #fff;
+    /* ahora a es un bloque. Por defecto, son in line */
+    display: block;
+    border: 1px solid #000;
+    /* Los elementos en línea no aceptan estas propiedades: */
+    margin: 20px;
+    padding: 20px;
+}
+
+/* display:
+    - block: empieza una nueva línea y ocupa el ancho completo. Podemos agregarle padding, margin, etc.
+    - inline: continúa en la misma línea y ocupa el espacio de su contenido. No es útil ponerle padding, margin, etc.
+    - inline-block: continúa en la misma línea y ocupa solo el espacio del contenido pero se puede modificar su padding, margin, etc.
+    - none: no ocupa espacio en la página */

@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+img {
+    /* Ocupa el máximo posible en pantalla sin perder calidad */
+    max-width: 100%;
+}
+
+/* Cómo hacer un video flexible */
+.contenedor {
+    max-width: 10%;
+    aspect-ratio: 16/9;
+    margin: auto;
+}
+
+video {
+    max-width: 100%;
+}

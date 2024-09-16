@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Si el navegador soporta el color "oklch", aplicar este estilo */
+@supports (color: oklch(30% 0.2 30)){
+    body {
+        color: oklch(30% 0.2 30);
+    }
+}
+
+/* Si no lo soporta, aplicar este estilo */
+@supports not (display:grid) {
+    body {
+        display: flex;
+    }
+}

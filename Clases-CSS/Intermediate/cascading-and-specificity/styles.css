@@ -1,0 +1,24 @@
+/* Cascading: si dos reglas tienen la misma especificidad, el orden va a definir cual regla se ejecuta (la última). */
+h1 {
+    color:red;
+}
+
+h1 {
+    color: blue
+}
+
+/* En este caso, como tienen la misma especificidad, se va a ejecutar la regla del color azul. */
+
+/* Specificity: se va a seleccionar la regla que sea más específica, sin importar el orden */
+
+#tit { /*Aún más específico que class*/
+    color: yellow;
+}
+
+.titulo { /*Más específico*/
+    color: green;
+}
+
+h1 {
+    color: purple;
+}

@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #0009;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: marca separación entre elementos*/
+}
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+    flex-grow: 1;
+    /* con flex-shrink, definimos hasta dónde se van a encoger los elementos (sin wrap O con wrap y flex-basis). Por defecto: 1.
+    Mayor sea el número que le asignamos, más se va a encoger en comparación con los otros elementos. Si le ponemos 0, no se encoge.*/
+    flex-basis: 150px;
+    /* con flex-basis, determinamos el tamaño base de cada elemento en la dirección del elemento (funciona SIMILAR al min-height/min-width). Por defecto: auto */
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    /* con flex-grow, va a ocupar todo el espacio disponible. Por defecto: 0 */
+    /* Si a todos los elementos de un FB le ponemos 1 y a este 2, este elemento va a ser el doble de grande que los otros. */
+    /* El espacio disponible se rompe en partes iguales y este elemento va a ocupar 2 de esos espacios */
+    flex-grow: 2;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
+
+/* ELEMENTO QUE ENGLOBA grow, shrink y basis: flex
+    orden: grow shrink basis */

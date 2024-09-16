@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+details {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 9px;
+    font-size: 1em;
+    color: #aaa;
+}
+
+/* De esta manera, indicamos que se sigan estas propiedades solo cuando details (el menú desplegable) esté abierto. */
+/* details[open] {
+    border: 1px solid #ddd;
+    font-weight: bold;
+} */
+
+summary {
+    background-color: transparent;
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+ul {
+    font-weight: 100;
+}

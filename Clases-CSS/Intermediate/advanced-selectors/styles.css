@@ -1,0 +1,44 @@
+/* SELECTOR DE ATRIBUTO */
+
+/* Selecciona a todas las imagenes que tengan al atributo definido entre corchetes */
+img[src="imagenes/fideos.jpeg"] {
+    width: 500px;
+}
+
+/* Selecciona a todas las imágenes cuyo nombre termine en "jpeg" */
+img[src$="jpeg"] {
+    width: 300px;
+}
+
+/* Selecciona a todas las imágenes cuyo nombre comienza en "imagenes" */
+img[src^="imagenes"] {
+    border-radius: 10px;
+}
+
+/* SELECTOR DE DESCENDIENTE */
+/* Solo a los elementos strong que estén dentro de un ul. Esto sirve para cualquier descendiente de ul */
+ul strong {
+    color: blue;
+}
+
+/* SELECTOR DE HIJO DIRECTO */
+ul > li {
+    color: #666;
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+/* Selecciona al 2do elemento (p) que esté INMEDIATAMENTE después de un elemento del primer tipo (h1) */
+h1 + p {
+    font-family: sans-serif;
+}
+
+/* Podemos poner más de dos elementos (en todos los casos de estos selectores) */
+h1 + p + p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+/* Selecciona a todos los p que vengan después de un h1. */
+h1 ~ p {
+    color: green;
+}

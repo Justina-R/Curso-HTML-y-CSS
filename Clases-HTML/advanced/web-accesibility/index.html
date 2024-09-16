@@ -1,0 +1,45 @@
+
+<!-- Hacer páginas accesibles para todos -->
+
+<!-- Cuando le mandamos una página web a un navegador, este crea un DOM (Document Object Model) que tiene todas las propiedades de HTML. Para lograr un contenido accesible, el navegador crea una copia del DOM que pasa por tecnologías accesibles para que un usuario que necesite tecnologías accesibles pueda acceder al contenido. -->
+
+<!-- Para probar cómo funciona una página con accesibilidad, podemos habilitar el Screen Reader desde el Chrome Web Store -->
+
+<!-- Todas las páginas web se deben poder navegar con TAB y ENTER tal y como se navegan con el teclado y el mouse. -->
+
+<!-- En Inspeccionar, Lighthouse podemos ver que tan bien está la accesibilidad de nuestra página web -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 aria-label="título principal">Título</h2>
+    <!-- El alt es lo que se va a decir cuando una persona ciega haga clic sobre la imagen -->
+    <img src="images/imagen.avif" alt="los tulipanes en Trevelin, Chubut">
+
+    <!-- El Screen Reader va a leer lo que dice el "aria-label". Este atributo se puede usar en muchas etiquetas para explicar qué debe hacer el usuario o que hace la etiqueta.-->
+    <a href="index.html" aria-label="enlace que redirige a la web principal">IR AL MENÚ</a>
+
+    <!-- Reconoce que es una barra de navegación -->
+    <nav>
+        <!-- El Screen Reader identifica que es una lista y lo dice -->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </nav>
+
+    <!-- Para elementos que no tienen una etiqueta específica en HTML, usamos el atributo "role". Por ejemplo, si queremos hacer un slider de imágenes -->
+     <!-- En mdn web docs (WAI-ARIA Roles), podemos ver todos los valores de "role" y cómo usarlos -->
+    <div id="slider" role="slider">
+        <img src="images/imagen.avif" alt="Trevelin">
+    </div>
+</body>
+</html>

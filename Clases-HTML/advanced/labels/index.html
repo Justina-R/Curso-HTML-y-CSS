@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labels</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <h2>Formulario de contacto</h2>
+      <div class="form_input">
+        <!-- En el atributo for, debe estar el id de un input. -->
+        <!-- Si no queremos poner el atributo for, la etiqueta input tiene que estar adentro de la etiqueta label (en ese caso, tampoco necesitamos el atributo id en el input). -->
+        <label for="nombre">Nombre completo</label>
+        <!-- Para que la label nos redirija a la escritura en el input cuando hacemos click, debemos ponerle un id al input. -->
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Juan Domínguez"
+          id="nombre"
+        />
+      </div>
+      <div class="form_input">
+        <label for="email">Correo electrónico</label>
+        <input
+          type="email"
+          name="correo electrónico"
+          placeholder="ejemplo@gmail.com"
+          id="email"
+        />
+      </div>
+      <div class="form_input">
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          rows="8"
+          placeholder="Dejá tu mensaje..."
+          id="mensaje"
+        ></textarea>
+      </div>
+    </form>
+  </body>
+</html>

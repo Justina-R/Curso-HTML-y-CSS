@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    /* Primero hay que definir el tipo de transición. En este caso, color. Podemos elegir más de uno */
+    transition-property: color, background-color;
+    /* La transición va a durar un segundo */
+    transition-duration: 1s;
+    /* Cuanto tarda en empezar a transicionar */
+    /* transition-delay: 4s; */
+}
+
+.box:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.box-movil {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin-top: 50px;
+    transition-property: left;
+    /* Forma en la que transiciona los elementos. BUSCAR EL CUBIC BEIZER GENERATOR */
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    position: relative;
+    left:0
+    /* COMO HACER TODOS LAS PROPIEDADES DE TRANSITION EN UNA
+        transition: left 1s(duración) ease-in-out 2s(delay); */
+}
+
+body:hover .box-movil {
+    left: 400px
+}

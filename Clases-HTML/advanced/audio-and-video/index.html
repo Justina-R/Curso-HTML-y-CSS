@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and audio</title>
+</head>
+<body>
+    <!-- Etiqueta para reproducir un video -->
+     <!-- Con autoplay, el video se reproduce automáticamente -->
+      <!-- controls muestra una barra para controlar el video -->
+       <!-- muted silencia el video hasta que el usuario suba el volumen -->
+        <!-- loop: pone el video en bucle -->
+    <video autoplay controls muted src="video.mp4">
+        <!-- track nos sirve para agregar, por ejemplo, subtítulos -->
+         <!-- scrlang es para indicarle a la página que los subtítulos están en español. label aparece cuando lo seleccionas en la barra de opciones de los controles del video -->
+        <track src="nombreArchivo.vtt" default kind="captions" srclang="es" label="Español (Latinoamérica)">
+        Tu navegador no soporta video
+    </video>
+    <!-- El texto entre las tags solo va a aparecer si el navegador no soporta videos. Si está roto el archivo o algo por el estilo, simplemente nos mostrará un formato de reproductor de video vacío. -->
+
+    <!-- Archivo de audio -->
+    <audio autoplay src="audio.mp3"></audio>
+</body>
+</html>

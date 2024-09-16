@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- La tabla se usa solo para datos que necesitan estar tabulados -->
+    <table>
+      <!-- Encabezado de una tabla -->
+      <thead>
+        <tr>
+          <!-- th es para poner títulos a las columnas de una tabla (table header) -->
+          <th>Producto</th>
+          <th>Costo</th>
+          <th>Unidades</th>
+        </tr>
+      </thead>
+
+      <!-- Cuerpo de una tabla -->
+      <!-- También podemos poner toda la información de la tabla junta dentro de la etiqueta "table" sin la división de sus partes. -->
+      <tbody>
+        <!-- Arma una fila (table row = tr) -->
+        <tr>
+          <!-- Con td se ingresan los elementos de la fila -->
+          <td>Banana</td>
+          <td>$1000</td>
+          <td>1kg</td>
+        </tr>
+        <!-- Fila 2 -->
+        <tr>
+          <!-- Con td se ingresan los elementos de la fila -->
+          <td>Manzana</td>
+          <td>$1200</td>
+          <td>1kg</td>
+        </tr>
+        <!-- Fila 3 -->
+        <tr>
+          <!-- Con td se ingresan los elementos de la fila -->
+          <td>Melón</td>
+          <td>$2800</td>
+          <td>1 unidad</td>
+        </tr>
+      </tbody>
+
+      <!-- Pie de una tabla -->
+      <tfoot>
+        <!-- Una fila puede tener una cantidad diferente de columnas que la otra -->
+        <tr>
+          <th class="header-total">Total</th>
+          <!-- colspan: Indica cuántas columnas a va a ocupar la celda. Por defecto, es 1. -->
+          <td class="dato-total" colspan="2">$5000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

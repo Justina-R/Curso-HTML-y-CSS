@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #0009;
+    margin: 20px;
+    align-items: center;
+    height: 300px;
+
+}
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+    flex-grow: 1;
+    flex-basis: 150px;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
+
+.item-5 {
+    /* align-self solo funciona si en la FB se alinean los elementos con "align-items". Por defecto: auto
+    - stretch: ocupa todo su espacio disponible
+    - start
+    - end
+    - baseline */
+    align-self: flex-start;
+}

@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 10px;
+    padding: 10px;
+    justify-items: stretch;
+    /* justify-items: alinea los elementos dentro de su espacio en el eje HORIZONTAL.
+        Por defecto: stretch, ocupa todo el espacio de la celda.
+       - start: cambia el tamaño del elemento horizontalmente. Tiene en cuenta la dirección del contenedor
+       - self-start: tiene en cuenta la dirección del hijo
+       - center
+       - end: como en flex
+       - self-end: como self-start
+       - right: alinea a la derecha
+       - left: alinea a la izquierda */
+    justify-content: space-evenly;
+    /* justify-content: modifica la posición de las celdas con respecto al grid en el eje HORIZONTAL.
+        - space-around
+        - space-between
+        - end*/
+
+    align-items: center;
+    /* Hace lo mismo que justify-items pero en el eje VERTICAL. */
+    /* align-content hace lo mismo que justify-content, pero en el eje VERTICAL */
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Justify-self: acomoda este elemento en específico de forma horizontal en el espacio de la celda*/
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}

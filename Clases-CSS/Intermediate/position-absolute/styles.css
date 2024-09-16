@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: #ccc;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contenedor {
+    border: 2px solid #000;
+    margin: 30px 50px;
+    background-color: #fff;
+    /* punto de referencia para los hijos */
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #db7;
+    color: #fff;
+}
+
+.box--blue {
+    background-color: #48e;
+    /* No ocupa lugar en la página ==> el relative deja el espacio */
+    /* El punto de referencia es la etiqueta html A NO SER QUE HAYA UN ELEMENTO CON POSITION: RELATIVE QUE LO CONTENGA */
+    position: absolute;
+    top: 0;
+}
+
+.box--red {
+    background-color: #e53;
+}

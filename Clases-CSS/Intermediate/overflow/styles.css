@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.box {
+    /* Al tener un tamaño específico, si el contenido del div supera estas medidas, ocurrirá un DESBORDAMIENTO */
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    color: red;
+    position: relative;
+    left: 0;
+    border: 2px solid #0009;
+    margin: auto;
+    margin-top: 50px;
+    /* DESBORDAMIENTO (overflow)
+        Propiedad por defecto: visible */
+        /* hidden: esconde el texto
+           scroll: tiene una barrita
+           auto: IMPORTANTE.
+           clip: no deja espacio para las barritas =/ hidden */
+    overflow: hidden;
+    /* Si queremos afectar a la barrita de un solo eje */
+    overflow-y: scroll;
+}

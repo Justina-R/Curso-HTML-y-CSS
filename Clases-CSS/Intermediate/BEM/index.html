@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología BEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- BEM: Block Element Modifier -->
+     <h1>Ingredientes</h1>
+     <ul class="lista">
+        <!-- bloque: lista elemento:__item modificador: --danino -->
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Papa</li>
+        <li class="lista__item item--importante">Harina</li>
+        <li class="lista__item">Agua</li>
+     </ul>
+     <!-- Podemos agregar una clase modificadora en cualquier parte (en bloques y elementos) -->
+     <ul class="lista lista--vieja">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Papa</li>
+        <li class="lista__item item--importante">Harina</li>
+        <li class="lista__item">Agua</li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+form {
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 35px #0006;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.form_input {
+    padding: 6px 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-shadow: 0 0 55px #0003;
+    background-color: transparent;
+    color: #eee;
+}
+
+option {
+    background-color: #222;
+    /* No se puede modificar la separación entre las options. */
+}
+
+textarea {
+    resize: none;
+    min-width: 100%;
+    min-height: 10px;
+    max-height: 102px;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 0.9em;
+    line-height: 2;
+}

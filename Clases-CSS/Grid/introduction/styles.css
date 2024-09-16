@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    /* Si no aclaramos filas y columnas, cada div del grid va a ser una fila implícita. */
+
+    /* Le aclaramos la medida de ANCHO de cada columna */
+    grid-template-columns: 60px 200px 400px;
+    /* En este caso, vamos a tener 2 columnas de 200px c/u. También podemos usar %, vw, rem */
+
+    /* Con el valor "auto", reparte el espacio disponible según lo q sobra del grid item */
+
+    /* Con "fr" (=fracción) lo divide en partes iguales sin importar el contenido de cada grid item. Si una caja necesita más contenido, se lo da. */
+
+    /* Le aclaramos la medida de ALTO de cada fila */
+    grid-template-rows: 80px 200px;
+    /* Si agregamos más filas que las que los grid item admiten, el navegador va a guardar el espacio para dichas filas. */
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}

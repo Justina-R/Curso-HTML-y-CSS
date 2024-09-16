@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textarea</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <h2>Formulario de contacto</h2>
+      <div class="form_input">
+        <input type="text" name="nombre" placeholder="Nombre completo" />
+      </div>
+      <div class="form_input">
+        <input
+          type="email"
+          name="correo electrónico"
+          placeholder="Correo electrónico"
+        />
+      </div>
+      <div class="form_input">
+        <!-- Agrega un cuadro de texto con lo que está entre las tags y después el usuario puede modificarlo. El tamaño es modificable por el usuario. Atributos: -->
+        <!-- readonly: hace que el texto entre las etiquetas se pueda leer pero no modificar. Cuando enviemos el formulario, este campo SÍ se va a enviar. -->
+        <!-- disable: similar a readonly solo que cuando enviemos el formulario, este campo NO se va a enviar. -->
+        <!-- maxlength="140": nos dice el máximo de caracteres que podemos escribir en el campo.-->
+        <!-- rows:"6": indica la cantidad de líneas que va a tener la caja. Se puede usar en lugar de min-height de CSS y hace que la caja tenga el tamaño exacto de las líneas. Igual, se recomienda usar las dos cosas.  -->
+        <textarea readonly placeholder="Dejá tu mensaje"></textarea>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+
+    /*justify-content: 
+    Habla del eje PRINCIPAL. Por defecto: start */
+    /* - end: va al final
+       - center
+       - space-between: 1er elemento: start, útlimo elemento: end. Los del medio los acomoda para que estén a la misma distancia.
+       - space-around: cada elemento tiene la misma separación.
+       - space-evenly: mismo espacio entre cada elemento.
+    */
+    justify-content: space-evenly;
+
+    /* align-items:
+    genera alineación en el eje cruzado. Se suele usar cuando tenemos una sola línea. Por defecto: stretch
+    - stretch: se estiran para llenar el contenedor
+    - start: solo van a ocupar el contenido que tienen adentro al principio de la flexbox.
+    - end
+    - center
+    - baseline: se alinean según la línea base del texto. */
+
+    /* align-content:
+    se utiliza para el eje cruzado. Por defecto: start
+    - center
+    - space-around
+    - space-evenly
+    - end */
+}
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+    order: 1;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    /* Marca el orden en el que va a aparecer. ORDEN SOLO VISUAL. Por defecto, es "order: 0" */
+    order: 2;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+    order: 3;
+}

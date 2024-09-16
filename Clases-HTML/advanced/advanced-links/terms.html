@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos y Condiciones</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        color: #2e6da4;
+    }
+    p {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div><p>ÍNDICE</p></div>
+    <!-- Si queremos poner enlaces que se muevan en la misma página, en href debemos poner el id del elemento al que queremos ir. -->
+
+    <div>
+        <a href="#accept-terms">1.Aceptación de Términos</a>
+    </div>
+
+    <div>
+        <a href="#service-description">2.Descripción del Servicio</a>
+    </div>
+
+    <div>
+        <a href="#orders-and-deliveries">3.Pedidos y Entregas</a>
+    </div>
+
+    <div>
+        <a href="#prices-and-payments">4.Precios y pagos</a>
+    </div>
+
+    <div>
+        <a href="#return-policies">5.Política de Devoluciones</a>
+    </div>
+
+    <div>
+        <a href="#responsability-limitation">6.Limitación de Responsabilidad</a>
+    </div>
+
+    <div>
+        <a href="#terms-and-cond-modif">7.Cambios en los Términos y Condiciones</a>
+    </div>
+
+    <div>
+        <a href="#contact">8.Contacto</a>
+    </div>
+
+    <!-- Con el atributo "download", el archivo que esté en href se va a descargar en el dispositivo del usuario. -->
+    <div>
+        <a href="terms.html" download>DESCARGAR TÉRMINOS Y CONDICIONES</a>
+    </div>
+
+    <div>
+        <!-- Cuando redirigimos a una página externa con "target: blank", se debe utilizar el elemento "rel: noopener" para evitar que la página externa tenga acceso al elemento window.opener y pueda redirigirnos a otra página.-->
+        <!-- En este caso también podemos usar "noreferrer", que impide a la página externa saber de qué página viene el usuario -->
+        <!-- También podemos agregar "nofollow" para evitar que el motor de búsqueda indexe esta página externa (no queremos que nuestro sitio se asocie con ella). Ayuda a no perder posicionamiento web. -->
+        <!-- Se pueden poner los tres juntos == rel: "noopener noreferrer nofollow" -->
+        TÉRMINOS Y CONDICIONES GENERADOS EN 
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer nofollow">GOOGLE.COM</a>
+    </div>
+
+    <!-- Este enlace nos manda directamente a una ventana para enviar un correo al mail ingresado en href. Se puede agregar un asunto y otras cosas (investigar)-->
+    <div>
+        <a href="mailto:ejemplo@gmail.com">MANDAR UN MAIL</a>
+    </div>
+
+    <!-- Si abrimos nuestra página web desde un teléfono, este enlace nos va a mandar directamente a la llamada con el número ingresado en href. -->
+    <div>
+        <a href="tel:+541123456789">LLAMAR POR TELÉFONO</a>
+    </div>
+    <!------------------------------------------------------------------------------------------------->
+    <h1>Términos y Condiciones</h1>
+    <h2 id="accept-terms">1. Aceptación de Términos</h2>
+    <p>
+        Al acceder y utilizar nuestra página web, aceptas estos términos y
+        condiciones en su totalidad. Si no estás de acuerdo con estos términos,
+        por favor, no utilices nuestro sitio.
+    </p>
+
+    <h2 id="service-description">2. Descripción del Servicio</h2>
+    <p>
+        Ofrecemos la venta de frutas frescas de alta calidad. No solicitamos
+        datos personales de nuestros usuarios.
+    </p>
+
+    <h2 id="orders-and-deliveries">3. Pedidos y Entregas</h2>
+    <p>
+        Los pedidos se realizan y se entregan en la dirección especificada al
+        momento de la compra. Nos reservamos el derecho de cancelar o rechazar
+        cualquier pedido por motivos razonables.
+    </p>
+    <!-- Para poder hacer enlaces en una misma página, siempre el elemento debe tener un id -->
+    <h2 id="prices-and-payments">4. Precios y Pagos</h2>
+    <p>
+        Los precios de las frutas se especifican claramente en el sitio web. Los
+        pagos deben realizarse a través de los métodos disponibles en nuestra
+        plataforma.
+    </p>
+
+    <h2 id="return-policies">5. Política de Devoluciones</h2>
+    <p>
+        Si no estás satisfecho con la calidad de las frutas recibidas, puedes
+        contactarnos dentro de las 24 horas posteriores a la entrega para
+        solicitar una devolución o cambio.
+    </p>
+
+    <h2 id="responsability-limitation">6. Limitación de Responsabilidad</h2>
+    <p>
+        No nos hacemos responsables por daños directos o indirectos que puedan
+        surgir del uso de nuestro sitio web o la compra de nuestros productos.
+    </p>
+
+    <h2 id="terms-and-cond-modif">
+        7. Cambios en los Términos y Condiciones
+    </h2>
+    <p>
+        Nos reservamos el derecho de modificar estos términos y condiciones en
+        cualquier momento. Los cambios serán efectivos inmediatamente después de
+        su publicación en el sitio web.
+    </p>
+
+    <h2 id="contact">8. Contacto</h2>
+    <p>
+        Para cualquier consulta o reclamo, puedes contactarnos a través de los
+        medios disponibles en la página web.
+    </p>
+    </div>
+</body>
+</html>

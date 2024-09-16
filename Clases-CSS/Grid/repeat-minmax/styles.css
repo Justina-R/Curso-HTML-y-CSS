@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    /* En este caso, el grid va a tener 4 columnas de 1fr cada una*/
+    /* Por fuera del repeat podemos agregar columnas con otros tamaños */
+    /* También podemos usar repeat para patrones: repeat(3, 1fr 2fr) */
+    /* repeat(cant-col, tamaño de la col) */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Con minmax(min, max) aclaramos los valores mínimos y máximos que puede tener una columna/fila */
+    grid-template-rows: 80px 200px;
+
+    /* Grid explícito: las columnas y filas que declaramos con "grid-template".
+     Grid implícito: los demás items del grid */
+
+     /* Tamaño para todas las filas que se crean automáticamente */
+     grid-auto-rows: 200px;
+
+     /* Le decimos al grid para dónde se va a seguir extendiendo automáticamente (filas o columnas). Por defecto, es "row" */
+     /* Si no queremos que se rompa cuando cambiamos los tamaños de los elementos, usamos "dense". NO RESPETA EL ORDEN, ya que intercambia el lugar de los elementos para rellenar espacios vacíos. */
+     grid-auto-flow: column;
+
+     /* No hay q usar margin para separar las celdas, sino gap: row-gap y column-gap. También las podemos indicar por separado */
+     gap: 25px 5px;
+     /*   row   col */
+    }
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}

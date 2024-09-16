@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+
+    /* Va en fila a favor de la dirección del texto */
+    flex-direction: row;
+
+    /* Con "direction" podemos determinar la dirección del texto: ltr (left to right) o rtl (right to left) */
+
+    /* flex wrap: si se cambia el tamaño del viewport, los elementos del flex pueden cambiar de línea (wrap o no wrap) */
+    flex-wrap: wrap;
+
+    /* flex-flow: define la dirección y el wrap
+        flex-flow: row wrap */
+}
+/* Por defecto, todos los elementos flex ocupan el total del eje cruzado (cross axis) */
+
+.flex-item {
+    /* Si no definimos un elemento de flex con altura y ancho (y lo hacemos a través de padding, por ejemplo), no va a ser flexible (no se va a acomodar al espacio disponible)*/
+    width: 180px;
+    background-color: #911;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}

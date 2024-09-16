@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+/* Vas a aplicar este estilo en medios de Impresión */
+@media print {
+    body {
+        /* Unidad de medida para impresión */
+        font-size: 20pt;
+    }
+}
+
+/* Vas a aplicar este estilo a las pantallas de hasta 500px */
+@media screen and (max-width:500px) {
+    body {
+        font-size: 30px;
+        background-color: #000;
+        color: #fff;
+    }
+}

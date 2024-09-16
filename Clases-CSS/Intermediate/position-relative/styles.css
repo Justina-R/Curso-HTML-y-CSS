@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #fff;
+    /* Mantiene la posición original, pero la podemos modificar (top, bottom, left, right). Es un punto de referencia para los elementos que estén adentro de él */
+    position: relative;
+    /* Por defecto, el valor es static. */
+    z-index: 10;
+}
+
+.box--blue {
+    background-color: blue;
+    /* La propiedad top tiene más importancia que bottom */
+    /* La propiedad left tiene más importancia que right */
+    top: -50px;
+    bottom: 250px;
+    z-index: 20;
+}
+
+.box--red {
+    background-color: red;
+}
+
+/* z-index: nos permite mover el elemento en el índice z (profundidad)
+            se suele poner de 10 en 10*/
